@@ -1,80 +1,104 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
-    font-family: Trebuchet MS;
-    padding: 10px;
-    background-image: url("https://www.toptal.com/designers/subtlepatterns/patterns/wheat.png");
-    
-    
-  }
-  
+  font-family: Trebuchet MS;
+  padding: 10px;
+  background-image: url("https://www.toptal.com/designers/subtlepatterns/patterns/wheat.png");
+}
+
+ul {
+  list-style-type: none;
+  margin: 10px;
+  padding: 0;
+  overflow: hidden;
+  background-color: 	#E9967A
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+
+
+
+
+
+
+
+.header {
+  background-color: #F5F5DC;
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  font-size: 20px;
+  border-style: solid;
+  border-width: 3px;
+  border-color: 	#E9967A;
+}
+
+.h1 {
+  font-family: 'Abril Fatface', cursive;
+}
+
+.column {
+  float: left;
+  padding: 20px;
+  height: 400px;
+
  
-  .header {
-    padding: 30px;
-    width: 980px;
-    margin: 20px;
-    text-align: center;
-    
-    background: 	#F5F5DC;
-  }
-  
-  .header h1 {
-    font-size: 50px;
-    font-family: Georgia;
-  }
-  
+}
 
-  .topnav {
-    
-    padding: 10px;
-    margin-right: 20px;
-    width: 980px;
-    overflow: hidden;
-    background-color:	#E9967A;
-    
-  }
-  
 
-  .topnav a {
-    float: left;
-    display: block;
-    color:azure;
-    text-align: center;
-    padding: 14px;
-  
-    text-decoration: none;
-  }
-  
-
-  .topnav a:hover {
-    background-color: 	#F5F5DC;
-    color: black;
-  }
-  
+.column.side {
+  width: 20%;
+margin: 10px
  
+}
 
 
-  .content {
-
-    width: 980px;
-    height: 400px;
-    background-color:	#F5F5DC;
-    margin: 20px;
-    padding: 30px;
-    
-   
-    
- }
- 
-
-
- .aboutmeimage {
-    float: left;
-    padding: 0 20px 20px 0;
+.column.middle {
   
- }
+  width: 70%;
+  margin: 10px
+ 
+ 
+ 
+}
 
-  .footer {
-    background-color:	#E9967A;
-    width: 980px;
-    padding: 10px;
-    
-  }
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.aboutmeimage {
+  float: left;
+  padding: 0 20px 20px 0;
+
+}
+
+.footer {
+  background-color: #F5F5DC;
+  padding: 10px;
+  text-align: center;
+  margin: 10px;
+}
+
+@media (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%;
